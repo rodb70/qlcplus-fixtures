@@ -6,7 +6,7 @@
   <Version>4.10.6 GIT</Version>
   <Author>Rod Boyce</Author>
  </Creator>
- <Manufacturer>BoomToneDJ.com</Manufacturer>
+ <Manufacturer>BoomToneDJ</Manufacturer>
  <Model>Moving Wash 7X10 Speed</Model>
  <Type>Moving Head</Type>
  <Channel Name="PAN The coarse adjustment">
@@ -30,9 +30,12 @@
   <Capability Min="0" Max="255">Motor speed from fast to slow</Capability>
  </Channel>
  <Channel Name="Stroboscopic speed from slow to fast">
-  <Group Byte="0">Shutter</Group>
-  <Capability Min="0" Max="255">Stroboscopic speed from slow
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">blackout</Capability>
+  <Capability Min="8" Max="134">white mix with dimmers</Capability>
+  <Capability Min="135" Max="239">Stroboscopic speed from slow
 to fast</Capability>
+  <Capability Min="240" Max="255">Use colour dimmers</Capability>
  </Channel>
  <Channel Name="RED Dimmer">
   <Group Byte="0">Intensity</Group>
