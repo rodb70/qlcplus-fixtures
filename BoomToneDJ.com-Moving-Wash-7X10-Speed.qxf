@@ -69,4 +69,44 @@ to fast</Capability>
   <Group Byte="0">Maintenance</Group>
   <Capability Min="255" Max="255">Reset</Capability>
  </Channel>
+ <Channel Name="31 kinds of color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255">31 kinds of color </Capability>
+ </Channel>
+ <Mode Name="5 DMX Channels Mode">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="4" Width="240" Height="230" Depth="300"/>
+   <Lens Name="PC" DegreesMin="45" DegreesMax="45"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">PAN The coarse adjustment</Channel>
+  <Channel Number="1">TILT The coarse adjustment</Channel>
+  <Channel Number="2">Motor speed from fast to slow</Channel>
+  <Channel Number="3">Stroboscopic speed from slow to fast</Channel>
+  <Channel Number="4">31 kinds of color</Channel>
+ </Mode>
+ <Mode Name="13 DMX Channels Mode:">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="4" Width="240" Height="230" Depth="300"/>
+   <Lens Name="PC" DegreesMin="45" DegreesMax="45"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">PAN The coarse adjustment</Channel>
+  <Channel Number="1">PAN Fine tuning</Channel>
+  <Channel Number="2">TILT The coarse adjustment</Channel>
+  <Channel Number="3">TILT Fine tuning</Channel>
+  <Channel Number="4">Motor speed from fast to slow</Channel>
+  <Channel Number="5">Stroboscopic speed from slow to fast</Channel>
+  <Channel Number="6">RED Dimmer</Channel>
+  <Channel Number="7">GREEN Dimmer</Channel>
+  <Channel Number="8">BLUE Dimmer</Channel>
+  <Channel Number="9">WHITE Dimmer</Channel>
+  <Channel Number="10">255 kinds of static color</Channel>
+  <Channel Number="11">Effect Selection</Channel>
+  <Channel Number="12">Reset</Channel>
+ </Mode>
 </FixtureDefinition>
