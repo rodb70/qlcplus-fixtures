@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.6 GIT</Version>
+  <Author>Rod Boyce</Author>
+ </Creator>
+ <Manufacturer>BoomToneDJ.com</Manufacturer>
+ <Model>Moving Wash 7X10 Speed</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="PAN The coarse adjustment">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">PAN The coarse adjustment</Capability>
+ </Channel>
+ <Channel Name="PAN Fine tuning">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">PAN Fine tuning</Capability>
+ </Channel>
+ <Channel Name="TILT The coarse adjustment">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">TILT The coarse adjustment</Capability>
+ </Channel>
+ <Channel Name="TILT Fine tuning">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">TILT Fine tuning</Capability>
+ </Channel>
+ <Channel Name="Motor speed from fast to slow">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Motor speed from fast to slow</Capability>
+ </Channel>
+ <Channel Name="Stroboscopic speed from slow to fast">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">Stroboscopic speed from slow
+to fast</Capability>
+ </Channel>
+ <Channel Name="RED Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">RED Dimmer</Capability>
+ </Channel>
+ <Channel Name="GREEN Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">GREEN Dimmer</Capability>
+ </Channel>
+ <Channel Name="BLUE Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">BLUE Dimmer</Capability>
+ </Channel>
+ <Channel Name="WHITE Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">WHITE Dimmer</Capability>
+ </Channel>
+ <Channel Name="255 kinds of static color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255">255 kinds of static color</Capability>
+ </Channel>
+ <Channel Name="Effect Selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">Control the dimming mode</Capability>
+  <Capability Min="1" Max="84">Slow walking</Capability>
+  <Capability Min="85" Max="169">Fast walking</Capability>
+  <Capability Min="170" Max="255">Sound Mode</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="255" Max="255">Reset</Capability>
+ </Channel>
+</FixtureDefinition>

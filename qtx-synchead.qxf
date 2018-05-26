@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.6 GIT</Version>
+  <Author>Rod Boyce</Author>
+ </Creator>
+ <Manufacturer>QTX</Manufacturer>
+ <Model>SynoHead</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Gobo Colour">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="15">White</Capability>
+  <Capability Min="16" Max="31">Red</Capability>
+  <Capability Min="32" Max="47">Amber</Capability>
+  <Capability Min="48" Max="63">Yellow</Capability>
+  <Capability Min="64" Max="79">Green</Capability>
+  <Capability Min="80" Max="95">Blue</Capability>
+  <Capability Min="96" Max="111">CYan</Capability>
+  <Capability Min="112" Max="128">Pink</Capability>
+  <Capability Min="129" Max="255">Continues colour change, slow to fast</Capability>
+ </Channel>
+ <Channel Name="GOBO Shapes">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7">GOBO 1</Capability>
+  <Capability Min="8" Max="15">GOBO 2</Capability>
+  <Capability Min="16" Max="23">GOBO 3 </Capability>
+  <Capability Min="24" Max="31">GOBO 4 </Capability>
+  <Capability Min="32" Max="39">GOBO 5 </Capability>
+  <Capability Min="40" Max="47">GOBO 6</Capability>
+  <Capability Min="48" Max="55">GOBO 7</Capability>
+  <Capability Min="56" Max="63">GOBO 8</Capability>
+  <Capability Min="64" Max="71">GOBO 1 shaking</Capability>
+  <Capability Min="72" Max="79">GOBO 2 shaking</Capability>
+  <Capability Min="80" Max="87">GOBO 3 shaking</Capability>
+  <Capability Min="88" Max="95">GOBO 4 shaking</Capability>
+  <Capability Min="96" Max="103">GOBO 5 shaking</Capability>
+  <Capability Min="104" Max="111">GOBO 6 shaking</Capability>
+  <Capability Min="112" Max="119">GOBO 7 shaking</Capability>
+  <Capability Min="120" Max="127">GOBO 8 shaking</Capability>
+  <Capability Min="128" Max="255">Continues GOBO change, slow to fast</Capability>
+ </Channel>
+ <Channel Name="Variable">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="7">Black out</Capability>
+  <Capability Min="8" Max="15">On</Capability>
+  <Capability Min="16" Max="131">Strobe, slow to fast</Capability>
+  <Capability Min="132" Max="139">On</Capability>
+  <Capability Min="140" Max="181">Slow fade out, fast on, speed increase with DMX value</Capability>
+  <Capability Min="182" Max="189">On</Capability>
+  <Capability Min="190" Max="231">fast off, slow fade in, speed increase with DMX value</Capability>
+  <Capability Min="232" Max="239">On</Capability>
+  <Capability Min="240" Max="247">Random Strobe</Capability>
+  <Capability Min="248" Max="255">On</Capability>
+ </Channel>
+ <Channel Name="Intensity">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">LED dimmer 0-100%</Capability>
+ </Channel>
+ <Channel Name="Driver speed, fast to slow">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Driver speed, fast to slow</Capability>
+ </Channel>
+ <Channel Name="Sound to light mode">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="239">NA</Capability>
+  <Capability Min="240" Max="255">Sound to light mode</Capability>
+ </Channel>
+ <Channel Name="Pan fine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Fine pan adjustment</Capability>
+ </Channel>
+ <Channel Name="Fine tilt adjustment">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Fine tilt adjustment</Capability>
+ </Channel>
+ <Mode Name="8-channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.5" Width="170" Height="150" Depth="270"/>
+   <Lens Name="Other" DegreesMin="13" DegreesMax="13"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="180"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Gobo Colour</Channel>
+  <Channel Number="3">GOBO Shapes</Channel>
+  <Channel Number="4">Variable</Channel>
+  <Channel Number="5">Intensity</Channel>
+  <Channel Number="6">Driver speed, fast to slow</Channel>
+  <Channel Number="7">Sound to light mode</Channel>
+ </Mode>
+ <Mode Name="10-channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.5" Width="170" Height="150" Depth="270"/>
+   <Lens Name="Other" DegreesMin="13" DegreesMax="13"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="180"/>
+   <Technical PowerConsumption="25" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Fine tilt adjustment</Channel>
+  <Channel Number="4">Gobo Colour</Channel>
+  <Channel Number="5">GOBO Shapes</Channel>
+  <Channel Number="6">Variable</Channel>
+  <Channel Number="7">Intensity</Channel>
+  <Channel Number="8">Driver speed, fast to slow</Channel>
+  <Channel Number="9">Sound to light mode</Channel>
+ </Mode>
+</FixtureDefinition>
