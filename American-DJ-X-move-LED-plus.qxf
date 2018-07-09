@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.2 GIT</Version>
+  <Author>Rod Boyce</Author>
+ </Creator>
+ <Manufacturer>American DJ</Manufacturer>
+ <Model>X-move LED plus</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Color wheel">
+  <Group Byte="1">Colour</Group>
+  <Capability Min="0" Max="14">WHITE</Capability>
+  <Capability Min="15" Max="29">ORANGE</Capability>
+  <Capability Min="30" Max="44">BLUE</Capability>
+  <Capability Min="45" Max="59">GREEN</Capability>
+  <Capability Min="60" Max="74">YELLOW</Capability>
+  <Capability Min="75" Max="89">PINK</Capability>
+  <Capability Min="90" Max="104">LIGHT BLUE</Capability>
+  <Capability Min="105" Max="119">LIGHT GREEN</Capability>
+  <Capability Min="120" Max="127">LIGHT YELLOW</Capability>
+  <Capability Min="128" Max="254">RAINBOW EFFECT SLOW - FAST</Capability>
+  <Capability Min="255" Max="255">SOUND ACTIVE</Capability>
+ </Channel>
+ <Channel Name="Gobo wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7">OPEN</Capability>
+  <Capability Min="8" Max="14">GOBO 1</Capability>
+  <Capability Min="15" Max="21">GOBO 2</Capability>
+  <Capability Min="22" Max="28">GOBO 3</Capability>
+  <Capability Min="29" Max="36">GOBO 4</Capability>
+  <Capability Min="37" Max="43">GOBO 5</Capability>
+  <Capability Min="44" Max="50">GOBO 6</Capability>
+  <Capability Min="51" Max="57">GOBO 7</Capability>
+  <Capability Min="58" Max="63">GOBO 8</Capability>
+  <Capability Min="64" Max="71">OPEN SHAKE</Capability>
+  <Capability Min="72" Max="78">GOBO 1 SHAKE</Capability>
+  <Capability Min="79" Max="85">GOBO 2 SHAKE</Capability>
+  <Capability Min="86" Max="92">GOBO 3 SHAKE</Capability>
+  <Capability Min="93" Max="100">GOBO 4 SHAKE</Capability>
+  <Capability Min="101" Max="107">GOBO 5 SHAKE</Capability>
+  <Capability Min="108" Max="114">GOBO 6 SHAKE</Capability>
+  <Capability Min="115" Max="121">GOBO 7 SHAKE</Capability>
+  <Capability Min="122" Max="127">GOBO 8 SHAKE</Capability>
+  <Capability Min="128" Max="254">GOBO WHEEL ROTATION SLOW - FAST</Capability>
+  <Capability Min="255" Max="255">SOUND ACTIVE</Capability>
+ </Channel>
+ <Channel Name="SHUTT">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="7">BLACKOUT</Capability>
+  <Capability Min="8" Max="15">SHUTTER OPEN</Capability>
+  <Capability Min="16" Max="131">STROBING SLOW - FAST</Capability>
+  <Capability Min="132" Max="139">SHUTTER OPEN</Capability>
+  <Capability Min="140" Max="180">SHUTTER SLOW OPEN - FAST CLOSE</Capability>
+  <Capability Min="181" Max="190">SHUTTER OPEN</Capability>
+  <Capability Min="191" Max="231">SHUTTER FAST OPEN - SLOW CLOSE</Capability>
+  <Capability Min="232" Max="239">SHUTTER OPEN</Capability>
+  <Capability Min="240" Max="247">RANDOM STROBE</Capability>
+  <Capability Min="248" Max="255">SHUTTER OPEN</Capability>
+ </Channel>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="MOVEM">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">NO FUNCTION</Capability>
+  <Capability Min="8" Max="28">MOVEMENT1</Capability>
+  <Capability Min="29" Max="49">MOVEMENT 2</Capability>
+  <Capability Min="50" Max="70">MOVEMENT 3</Capability>
+  <Capability Min="71" Max="91">MOVEMENT 4</Capability>
+  <Capability Min="92" Max="112">MOVEMENT 5</Capability>
+  <Capability Min="113" Max="133">MOVEMENT 6</Capability>
+  <Capability Min="134" Max="154">MOVEMENT 7</Capability>
+  <Capability Min="155" Max="175">MOVEMENT 8</Capability>
+  <Capability Min="176" Max="196">MOVEMENT 9</Capability>
+  <Capability Min="197" Max="217">MOVEMENT 10</Capability>
+  <Capability Min="218" Max="238">MOVEMENT 11</Capability>
+  <Capability Min="239" Max="255">MOVEMENT 12</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Mode Name=" X-Move LED Plus ">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Color wheel</Channel>
+  <Channel Number="3">Gobo wheel</Channel>
+  <Channel Number="4">SHUTT</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">MOVEM</Channel>
+  <Channel Number="7">Pan/Tilt speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="4.5" Width="190" Height="320" Depth="205"/>
+  <Lens Name="PC" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="49" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
