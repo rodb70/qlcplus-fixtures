@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.6 GIT</Version>
+  <Author>Rod Boyce</Author>
+ </Creator>
+ <Manufacturer>Equinox</Manufacturer>
+ <Model>fusion Rasor Beam</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Channel Name="Colour Macros">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="4">Blackout</Capability>
+  <Capability Min="5" Max="14">Red</Capability>
+  <Capability Min="15" Max="24">Green</Capability>
+  <Capability Min="25" Max="34">Blue</Capability>
+  <Capability Min="35" Max="44">White</Capability>
+  <Capability Min="45" Max="54">Cyan</Capability>
+  <Capability Min="55" Max="64">Yellow</Capability>
+  <Capability Min="65" Max="74">Orange</Capability>
+  <Capability Min="75" Max="84">Pink</Capability>
+  <Capability Min="85" Max="94">Purple</Capability>
+  <Capability Min="95" Max="104">Pastel green (green &amp; white)</Capability>
+  <Capability Min="105" Max="114">Pastel red (red &amp; white)</Capability>
+  <Capability Min="115" Max="124">Pastel blue (blue &amp; white)</Capability>
+  <Capability Min="125" Max="134">Pastel pink (red, plue &amp; white)</Capability>
+  <Capability Min="135" Max="144">Warm white (orange &amp; white)</Capability>
+  <Capability Min="145" Max="150">Blackout</Capability>
+  <Capability Min="151" Max="200">Colour fade (151: slow fade, 200: fast fade)</Capability>
+  <Capability Min="201" Max="255">Colour change (201: slow change, 255: fast change)</Capability>
+ </Channel>
+ <Channel Name="Sound to light control">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="127">Sound control via controller is OFF</Capability>
+  <Capability Min="128" Max="255">Sound control via controller is ON</Capability>
+ </Channel>
+ <Channel Name="AT01">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="127">Auto Run (AT01)</Capability>
+  <Capability Min="128" Max="255">Sound active (128: low sensitivity, 255: high sensitivity)</Capability>
+ </Channel>
+ <Mode Name="1 channel mode">
+  <Channel Number="0">AT01</Channel>
+ </Mode>
+ <Mode Name="4 channel mode">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Master dimmer</Channel>
+  <Channel Number="3">Colour Macros</Channel>
+ </Mode>
+ <Mode Name="7 channel mode">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Master dimmer</Channel>
+  <Channel Number="3">Red</Channel>
+  <Channel Number="4">Green</Channel>
+  <Channel Number="5">Blue</Channel>
+  <Channel Number="6">White</Channel>
+ </Mode>
+ <Mode Name="10 channel mode">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Pan/Tilt speed</Channel>
+  <Channel Number="3">Master dimmer</Channel>
+  <Channel Number="4">Red</Channel>
+  <Channel Number="5">Green</Channel>
+  <Channel Number="6">Blue</Channel>
+  <Channel Number="7">White</Channel>
+  <Channel Number="8">Colour Macros</Channel>
+  <Channel Number="9">Sound to light control</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.55" Width="305" Height="222" Depth="190"/>
+  <Lens Name="Other" DegreesMin="8" DegreesMax="8"/>
+  <Focus Type="Fixed" PanMax="540" TiltMax="180"/>
+  <Technical PowerConsumption="89" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
