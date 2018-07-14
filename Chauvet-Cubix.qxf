@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.6 GIT</Version>
+  <Author>Rod Boyce</Author>
+ </Creator>
+ <Manufacturer>Chauvet</Manufacturer>
+ <Model>Cubix</Model>
+ <Type>Effect</Type>
+ <Channel Name="Operating mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">No function</Capability>
+  <Capability Min="5" Max="28">Red</Capability>
+  <Capability Min="29" Max="56">Green</Capability>
+  <Capability Min="57" Max="84">Blue</Capability>
+  <Capability Min="85" Max="112">Blue / Green</Capability>
+  <Capability Min="113" Max="140">Red / Blue</Capability>
+  <Capability Min="141" Max="168">Green/red</Capability>
+  <Capability Min="169" Max="197">Red/green/blue</Capability>
+  <Capability Min="198" Max="224">Automatic (3-color chase)</Capability>
+  <Capability Min="225" Max="255">Automatic (7-color chase)</Capability>
+ </Channel>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Motor rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Rotate clockwise</Capability>
+  <Capability Min="128" Max="255">Rotate bidirectional (fast~slow)</Capability>
+ </Channel>
+ <Channel Name="Center effect">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="14">No function</Capability>
+  <Capability Min="15" Max="20">Effect 1</Capability>
+  <Capability Min="21" Max="26">Effect 2</Capability>
+  <Capability Min="27" Max="32">Effect 3</Capability>
+  <Capability Min="33" Max="38">Effect 4</Capability>
+  <Capability Min="39" Max="44">Effect 5</Capability>
+  <Capability Min="45" Max="50">Effect 6</Capability>
+  <Capability Min="51" Max="56">Effect 7</Capability>
+  <Capability Min="57" Max="62">Effect 8</Capability>
+  <Capability Min="63" Max="68">Effect 9</Capability>
+  <Capability Min="69" Max="74">Effect 10</Capability>
+  <Capability Min="75" Max="80">Effect 11</Capability>
+  <Capability Min="81" Max="86">Effect 12</Capability>
+  <Capability Min="87" Max="92">Effect 13</Capability>
+  <Capability Min="93" Max="98">Effect 14</Capability>
+  <Capability Min="99" Max="104">Effect 15</Capability>
+  <Capability Min="105" Max="110">Effect 16</Capability>
+  <Capability Min="111" Max="116">Effect 17</Capability>
+  <Capability Min="117" Max="122">Effect 18</Capability>
+  <Capability Min="123" Max="128">Effect 19</Capability>
+  <Capability Min="129" Max="134">Effect 20</Capability>
+  <Capability Min="135" Max="140">Effect 21</Capability>
+  <Capability Min="141" Max="146">Effect 22</Capability>
+  <Capability Min="147" Max="152">Effect 23</Capability>
+  <Capability Min="153" Max="158">Effect 24</Capability>
+  <Capability Min="159" Max="164">Effect 25</Capability>
+  <Capability Min="165" Max="170">Effect 26</Capability>
+  <Capability Min="171" Max="176">Effect 27</Capability>
+  <Capability Min="177" Max="182">Effect 28</Capability>
+  <Capability Min="183" Max="188">Effect 29</Capability>
+  <Capability Min="189" Max="194">Effect 30</Capability>
+  <Capability Min="195" Max="200">Effect 31</Capability>
+  <Capability Min="201" Max="206">Effect 32</Capability>
+  <Capability Min="207" Max="212">Effect 33</Capability>
+  <Capability Min="213" Max="218">Effect 34</Capability>
+  <Capability Min="219" Max="224">Effect 35</Capability>
+  <Capability Min="225" Max="230">Effect 36</Capability>
+  <Capability Min="231" Max="236">Effect 37</Capability>
+  <Capability Min="237" Max="242">Effect 38</Capability>
+  <Capability Min="243" Max="248">Effect 39</Capability>
+  <Capability Min="249" Max="255">Effect 40</Capability>
+ </Channel>
+ <Channel Name="Center effect speed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">Stop</Capability>
+  <Capability Min="16" Max="255">Speed (slow - fast)</Capability>
+ </Channel>
+ <Channel Name="Center strobe">
+  <Group Byte="0">Shutter</Group>
+ </Channel>
+ <Mode Name="Default">
+  <Channel Number="0">Operating mode</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Motor rotation</Channel>
+  <Channel Number="3">Center effect</Channel>
+  <Channel Number="4">Center effect speed</Channel>
+  <Channel Number="5">Center strobe</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.4" Width="255" Height="256" Depth="337"/>
+  <Lens Name="Other" DegreesMin="111" DegreesMax="111"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="41" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
